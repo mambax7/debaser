@@ -42,7 +42,7 @@
 
 		include_once DEBASER_RINC.'/functions.php';
 		include_once XOOPS_ROOT_PATH.'/class/module.textsanitizer.php';
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 
 		// Workaround for Flash-Cookie-Bug, we have to restore the session
 		if (isset($_POST['PHPSESSID'])) {

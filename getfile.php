@@ -35,7 +35,7 @@
 	} else {
 
 		include_once XOOPS_ROOT_PATH.'/class/module.textsanitizer.php';
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 
 		$module_handler = &xoops_gethandler('module');
 		$module =& $module_handler->getByDirname('debaser');

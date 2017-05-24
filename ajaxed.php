@@ -41,7 +41,7 @@
 			exit();
 		}
 
-		$xoopsMailer =& xoops_getMailer();
+		$xoopsMailer = xoops_getMailer();
 		$xoopsMailer->setTemplateDir(DEBASER_ROOT.'/language/'.$xoopsConfig['language'].'/mail_template/');
 		$xoopsMailer->setTemplate('taf.tpl');
 		$xoopsMailer->setFromName($myts->stripSlashesGPC($xoopsUser->uname()));

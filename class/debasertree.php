@@ -21,7 +21,7 @@ class debaserTree
 	function debaserTree($table_name, $id_name, $pid_name, $lang, $andextra, $permis)
 	{
 		global $groups, $module_id, $gperm_handler;
-		$this->db =& Database::getInstance();
+		$this->db = Database::getInstance();
 		$this->table = $table_name;
 		$this->id = $id_name;
 		$this->pid = $pid_name;
@@ -96,7 +96,7 @@ class debaserTree
 	{
 		$parentid = $this->arr[$sel_id][$this->pid];
 		$name = $this->arr[$sel_id][$title];
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$name = $myts->htmlSpecialChars($name);
 		$path = "/".$name.$path."";
 		if ( $parentid == 0 ) {
@@ -114,7 +114,7 @@ class debaserTree
 		if ( $sel_name == "" ) {
 			$sel_name = $this->id;
 		}
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		echo "<select id='".$sel_name."' name='".$sel_name."'";
 		if ( $onchange != "" ) {
 			echo " onchange='".$onchange."'";
@@ -154,7 +154,7 @@ class debaserTree
 		if ( $sel_name == "" ) {
 			$sel_name = $this->id;
 		}
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$returnit .= "<select id='".$sel_name."' name='".$sel_name."'";
 		if ( $onchange != "" ) {
 			$returnit .= " onchange='".$onchange."'";
@@ -191,7 +191,7 @@ class debaserTree
 	{
 		$parentid = $this->arr[$sel_id][$this->pid];
 		$name = $this->arr[$sel_id][$title];
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 		$name = $myts->htmlSpecialChars($name);
 		$path = "<a href='".$funcURL."&amp;".$this->id."=".$sel_id."'>".$name."</a> ".$path."";
 		if ( $parentid == 0 ) {

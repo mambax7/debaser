@@ -59,7 +59,7 @@
 	}
 
 	include_once XOOPS_ROOT_PATH.'/class/module.textsanitizer.php';
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
 
 	if ($xoopsModuleConfig['multilang'] == 0) {
 		$langa = $xoopsDB->quoteString($xoopsModuleConfig['masterlang']);

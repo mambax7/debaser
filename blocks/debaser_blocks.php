@@ -65,7 +65,7 @@
 		$getlofi = 0;
 	}
 
-	$myts =& MyTextSanitizer::getInstance();
+	$myts = MyTextSanitizer::getInstance();
 
 
 
@@ -90,7 +90,7 @@
 			$groups = (is_object($xoopsUser)) ? $xoopsUser->getGroups() : XOOPS_GROUP_ANONYMOUS;
 			$module_id = $module->getVar('mid');
 			$gperm_handler = &xoops_gethandler('groupperm');
-			$myts =& MyTextSanitizer::getInstance();
+			$myts = MyTextSanitizer::getInstance();
 		}
 
 		$block = array();
@@ -128,7 +128,7 @@
 			$groups = (is_object($xoopsUser)) ? $xoopsUser->getGroups() : XOOPS_GROUP_ANONYMOUS;
 			$module_id = $module->getVar('mid');
 			$gperm_handler = &xoops_gethandler('groupperm');
-			$myts =& MyTextSanitizer::getInstance();
+			$myts = MyTextSanitizer::getInstance();
 		}
 
 		$block = array();
@@ -209,7 +209,7 @@ if ($anythere > 0) {
 		$groups = (is_object($xoopsUser)) ? $xoopsUser->getGroups() : XOOPS_GROUP_ANONYMOUS;
 		$module_id = $module->getVar('mid');
 		$gperm_handler = &xoops_gethandler('groupperm');
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 	}
 
 	$block = array();
@@ -248,7 +248,7 @@ if ($gperm_handler->checkRight('DebaserCatPerm', $myrow['genreid'] , $groups, $m
 		$groups = (is_object($xoopsUser)) ? $xoopsUser->getGroups() : XOOPS_GROUP_ANONYMOUS;
 		$module_id = $module->getVar('mid');
 		$gperm_handler = &xoops_gethandler('groupperm');
-		$myts =& MyTextSanitizer::getInstance();
+		$myts = MyTextSanitizer::getInstance();
 	}
 
 	$block = array();
